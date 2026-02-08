@@ -1,9 +1,18 @@
+import { Container } from "@/components/container";
+import Hero from "@/components/Hero";
+import NavBar from "@/components/NavBar";
 import Image from "next/image";
 
 export default function Home() {
   return (
-    <div className="flex min-h-screen items-center justify-center bg-zinc-50 font-sans dark:bg-black">
-      Hello World
+    <div className="layout">
+      <Container>
+        <div className="left-line"></div>
+        <NavBar />
+        <Hero />
+        <div className="right-line"></div>
+
+      </Container>
     </div>
   );
 }
